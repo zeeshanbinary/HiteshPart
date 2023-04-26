@@ -1,10 +1,9 @@
-import {View, Text, useColorScheme, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.container}>
-      <Text style={isDarkMode ? styles.whiteText : styles.darkText}>
+      <Text>
         Hello Zeehsan Ansari
       </Text>
     </View>
@@ -18,11 +17,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  whiteText: {
-    color: '#fff',
-  },
-  darkText: {
-    color: '#000',
-  },
+  }
 });
